@@ -14215,3 +14215,40 @@ function(t) {
     };
     "undefined" != typeof module && module.exports ? module.exports = e() : "function" == typeof define && define.amd && define([], e)
 }();
+// let subscribeRegularity = document.getElementsByClassName('regularity')
+// Array.prototype.forEach.call(subscribeRegularity, el => {
+//   el.addEventListener("click", (e) => {
+//     let t = e.currentTarget
+//     let p = t.parentNode
+//     if(e.currentTarget.classList.contains('six')) {
+//       t.classList.add('s-default')
+//       p.lastElementChild.classList.remove('t-default')
+//       p.parentNode.firstElementChild.classList.add('price-six-m')
+//     } else
+//       {
+//         t.classList.add('t-default')
+//         p.firstElementChild.classList.remove('s-default')
+//         p.parentNode.firstElementChild.classList.remove('price-six-m')
+//       }
+//   })
+// })
+
+
+function subscribeSelect() {
+  let t = event.currentTarget
+  let p = t.parentNode
+  if(t.classList.contains('six')) {
+    t.classList.add('s-default')
+    p.lastElementChild.classList.remove('t-default')
+    p.parentNode.firstElementChild.classList.add('price-six-m')
+  } else
+    {
+      t.classList.add('t-default')
+      p.firstElementChild.classList.remove('s-default')
+      p.parentNode.firstElementChild.classList.remove('price-six-m')
+    }
+}
+function plan(text) {
+  let plan = document.querySelector('#plan')
+  plan.innerHTML = `${text} Plan`
+}
