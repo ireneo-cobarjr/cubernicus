@@ -2115,10 +2115,10 @@
                         n = void 0,
                         i = void 0,
                         c = function(e, o) {
-                            TweenLite.to(t, .2, {
-                                y: o,
-                                x: e
-                            })
+                            // TweenLite.to(t, .2, {
+                            //     y: o,
+                            //     x: e
+                            // })
                         };
                     e.body.on("resize", function() {
                         o = e.body.width(), a = e.body.height()
