@@ -2179,15 +2179,15 @@
                         i = void 0,
                         s = void 0,
                         l = function(e, t, n, r, i, s) {
-                            TweenLite.to(o, i, {
-                                top: t,
-                                left: e,
-                                overwrite: !0
-                            }), TweenLite.to(a, s, {
-                                top: r,
-                                left: n,
-                                overwrite: !0
-                            })
+                            // TweenLite.to(o, i, {
+                            //     top: t,
+                            //     left: e,
+                            //     overwrite: !0
+                            // }), TweenLite.to(a, s, {
+                            //     top: r,
+                            //     left: n,
+                            //     overwrite: !0
+                            // })
                         };
                     t.on("mouseenter", function(t) {
                         n = o.offset().top - e.window.scrollTop(), r = o.offset().left - e.window.scrollLeft(), i = o.outerWidth(), s = o.outerHeight()
@@ -3254,18 +3254,18 @@
                                 c = 2 * (l - .5),
                                 f = (5 - 10 * s).toFixed(2),
                                 d = ((10 * l - 5).toFixed(2), 20 * c);
-                            TweenLite.to(t, .3, {
-                                scale: 1.07,
-                                rotationY: f,
-                                y: d
-                            })
+                            // TweenLite.to(t, .3, {
+                            //     scale: 1.07,
+                            //     rotationY: f,
+                            //     y: d
+                            // })
                         }), t.on("mouseleave", function(e) {
-                            TweenLite.to(this, .4, {
-                                scale: 1,
-                                rotationX: 0,
-                                rotationY: 0,
-                                y: 0
-                            })
+                            // TweenLite.to(this, .4, {
+                            //     scale: 1,
+                            //     rotationX: 0,
+                            //     rotationY: 0,
+                            //     y: 0
+                            // })
                         })
                     })
                 }), o.find(".cb-projectbox-intro-request button").on("click", function() {
